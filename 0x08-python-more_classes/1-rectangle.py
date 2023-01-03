@@ -7,8 +7,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """Initializing this rectangle class
         Args:
-            width: width of the rectangle
-            height: height of the rectangle
+            width: this represents the width of the rectangle
+            height: this represents the height of the rectangle
         Raises:
             TypeError: if size is not integer
             ValueError: if size is less than zero
