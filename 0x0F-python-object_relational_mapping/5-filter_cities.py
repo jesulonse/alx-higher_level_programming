@@ -27,13 +27,13 @@ if __name__ == '__main__':
                 states
             ON
                 cities.state_id = states.id
-	    WHERE
-	        states.name LIKE %(state)s
+            WHERE
+                states.name LIKE %(state)s
             ORDER BY
                 cities.id
-        """, {'state':argv[4]})
+        """, {'state': argv[4]})
 
         rows = cur.fetchall()
 
     if rows is not None:
-       print(", ".join([row[0] for row in rows]))
+        print(", ".join([row[0] for row in rows]))
